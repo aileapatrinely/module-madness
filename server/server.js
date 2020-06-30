@@ -6,7 +6,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000; // Used to direct traffic
 
-app.get('/currency', function(req, res){
+app.get('/currency', function (req, res) {
   let responseString = 'hello';
 
   // YOUR CODE HERE
@@ -15,6 +15,6 @@ app.get('/currency', function(req, res){
 });
 
 // Start up the server
-app.listen(port, function() {
-    console.log('listening on port', port);
+app.listen(port, function () {
+  console.log('listening on port', port);
 });
