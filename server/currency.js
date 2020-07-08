@@ -1,8 +1,12 @@
 const random_num = require('./randomnumber');
 const money_convert = require('./converter');
 
-function dollaBillsYo() {
-  const the_number = random_num(10, 10000);
+const disMoney = () => {
+  console.log('hi');
 
-  let allmoney = money_convert(the_number);
-}
+  const random = random_num(10, 10000);
+  const money = money_convert(random);
+  return money;
+};
+
+module.exports = disMoney();

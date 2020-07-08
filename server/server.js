@@ -9,9 +9,9 @@ const port = process.env.PORT || 5000; // Used to direct traffic
 app.get('/currency', function (req, res) {
   let responseString = 'hello';
 
-  // YOUR CODE HERE
+  const currency = require('./currency.js'); // YOUR CODE HERE
 
-  res.send(responseString);
+  res.send(currency);
 });
 
 // Start up the server
